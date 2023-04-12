@@ -127,14 +127,14 @@ export default function Hero() {
               </Button>
               <Button
                 component="a"
-                href="https://github.com/yakGPT/yakGPT"
+                href="https://ai.zhikeb.com"
                 variant="default"
                 radius="xl"
                 size="md"
                 className={classes.control}
                 leftIcon={<IconBrandGithub size={20} />}
               >
-                {t("Source Code")}
+                {t("Code")}
               </Button>
             </Group>
           </div>
