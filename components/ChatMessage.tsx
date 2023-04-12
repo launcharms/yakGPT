@@ -22,21 +22,6 @@ import {
 } from "@/stores/ChatActions";
 
 const useStyles = createStyles((theme: MantineTheme) => ({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    height: "100%",
-
-    [`@media (min-width: ${theme.breakpoints.sm})`]: {
-      paddingBottom: "5em",
-    },
-  },
-  chatContainer: {
-    overflowY: "scroll",
-    flexGrow: 1,
-    display: "flex",
-    flexDirection: "column",
-  },
   messageContainer: {
     display: "flex",
     flexDirection: "column",
@@ -176,19 +161,17 @@ export default function ChatDisplay({ message }: { message: Message }) {
               alignItems: "center",
             }}
           >
-            <MediaQuery smallerThan="md" styles={{ display: "none" }}>
-              <div className={classes.topOfMessage}>
-                <Avatar size="sm">
-                  {message.role === "system" ? (
-                    <IconSettings />
-                  ) : message.role === "assistant" ? (
-                    <AssistantIcon width={px("1.5rem")} height={px("1.5rem")} />
-                  ) : (
-                    <UserIcon width={px("1.5rem")} height={px("1.5rem")} />
-                  )}
-                </Avatar>
-              </div>
-            </MediaQuery>
+            <div className={classes.topOfMessage}>
+              <Avatar size="sm">
+                {message.role === "system" ? (
+                  <IconSettings />
+                ) : message.role === "assistant" ? (
+                  <AssistantIcon width={px("1.5rem")} height={px("1.5rem")} />
+                ) : (
+                  <UserIcon width={px("1.5rem")} height={px("1.5rem")} />
+                )}
+              </Avatar>
+            </div>
 
             <MessageDisplay
               message={message}
