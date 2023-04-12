@@ -83,7 +83,7 @@ export default function Hero() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              <span className={classes.highlight}>YakGPT</span>
+              <span className={classes.highlight}>MindGPT</span>
             </Title>
             <Text color="dimmed" mt="md">
               {t("A simple, locally running ChatGPT UI.")}
