@@ -80,10 +80,10 @@ export default function Hero() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              <span className={classes.highlight}>YakGPT</span>
+              <span className={classes.highlight}>智客GPT</span>
             </Title>
             <Text color="dimmed" mt="md">
-              A simple, locally running ChatGPT UI.
+              一个简单且本地运行的 ChatGPT 用户界面.
             </Text>
 
             <List
@@ -97,18 +97,16 @@ export default function Hero() {
               }
             >
               <List.Item>
-                <b>Run locally on browser</b> – no need to install any
-                applications
+                <b>在浏览器上本地运行</b> – 无需安装任何应用
               </List.Item>
               <List.Item>
-                <b>Faster than the official UI</b> – connect directly to the API
+                <b>比官方 UI 更快</b> – 直接连接到 API
               </List.Item>
               <List.Item>
-                <b>Easy mic integration</b> – no more typing!
+                <b>轻松集成语音</b> – 无需再打字！
               </List.Item>
               <List.Item>
-                <b>Use your own API key</b> – ensure your data privacy and
-                security
+                <b>使用您自己的 API 密钥</b> – 确保您的数据隐私和安全
               </List.Item>
             </List>
 
@@ -119,18 +117,18 @@ export default function Hero() {
                 className={classes.control}
                 onClick={open}
               >
-                Enter API Key
+                请输入API秘钥
               </Button>
               <Button
                 component="a"
-                href="https://github.com/yakGPT/yakGPT"
+                href="https://ai.zhikeb.com"
                 variant="default"
                 radius="xl"
                 size="md"
                 className={classes.control}
                 leftIcon={<IconBrandGithub size={20} />}
               >
-                Source Code
+                回免费版
               </Button>
             </Group>
           </div>
